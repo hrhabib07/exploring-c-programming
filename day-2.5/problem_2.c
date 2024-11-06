@@ -11,9 +11,15 @@ int main(){
     printf("your given first number is : %d",num1);
     printf("\nYour given second number is : %d",num2);
     printf("\nYour sum is : %d",num1+ num2);
+    printf("\nYour deduction is : %d",num1 - num2);
+    printf("\nYour multiplication is : %d",num1 * num2);
+    printf("\nYour division is : %d",num1 / num2);
+    printf("\nYour modulus is : %d",num1 % num2);
+
 
     return 0;
 }
+
 
 
 
@@ -24,3 +30,5 @@ int main(){
 // 5 - 2 = 3
 // 5 * 2 = 10
 // 5 / 2 = 2.50
+
+
