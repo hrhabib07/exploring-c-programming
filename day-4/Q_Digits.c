@@ -8,13 +8,14 @@ int main(){
     {
         long long int num;
         scanf("%lld", &num);
-        while (num>=0)
-        {
-          
-            long long int digit = num%10;
+       do
+       {
+        long long int digit = num%10;
             printf("%lld ",digit);
             num= num/10;
-        }
+       } while (num>0);
+
+       
         printf("\n");
     }
     
