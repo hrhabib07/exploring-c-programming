@@ -8,7 +8,7 @@ int main(){
             printf("Correct\n");
             break;
         } else{
-            printf("Wrong");
+            printf("Wrong\n");
         }
     }
     
