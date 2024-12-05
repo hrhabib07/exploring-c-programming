@@ -7,7 +7,7 @@ int main(){
     int odd=0;
     scanf("%d", &num);
 
-    for(int i=1; num>=1 && i<=num && num<=1000;i++){
+    for(int i=1; num>1 && i<=num && num<=1000;i++){
         
         int scanNum;
         scanf("%d", &scanNum);
