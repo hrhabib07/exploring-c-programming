@@ -7,17 +7,21 @@ int main(){
     {
         scanf("%d", &arr[i]);
     }
-    
-    int ind;
-    scanf("%d", &ind);
-    for (int i = ind; i < n-1; i++)
+    int i =0,j=n-1, temp =0;
+    while (i<j)
     {
-        arr[i] = arr[i+1];
-    };
-    for (int i = 0; i < n-1; i++)
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+        j--;
+    }
+    
+    for (int i = 0; i < n; i++)
     {
         printf("%d ", arr[i]);
     }
-
+    
+    
     return 0;
 }
