@@ -7,15 +7,42 @@ int main(){
     scanf("%s", arr2);
     int lengAr1 = strlen(arr1);
     int lengAr2 = strlen(arr2);
-    if(lengAr1<lengAr2){
-        lengAr1 = lengAr2;
-    }
-    for (int i = 0; i < lengAr1 ; i++)
+    int i =0;
+    while (1)
     {
-        arr2[i] = arr1[i];
-    };
-
-    printf("%s %s", arr1, arr2);
+        if (arr1[i] == arr2[i])
+        {
+            if (arr1[i] =='\0' && arr2[i] =='\0'){
+            printf("Same \n");
+            break;
+        } else {
+            i++;
+            continue;
+            }
+            
+        }
+          else if (arr1[i]<arr2[i])
+        {
+            printf("Small: %s \n", arr1);
+            break;
+        } else if (arr1[i]>arr2[i])
+        {
+            printf("Small: %s \n", arr2);
+            break;
+        }
+        
+          
+        else if (arr1[i] =='\0')
+        {
+            printf("Small: %s \n", arr1);
+            break;
+        } else if (arr2[i] == '\0')
+        {
+            printf("Small: %s \n", arr2);
+            break;
+        } 
+        i++;
+    }
     
 
 
