@@ -1,11 +1,8 @@
 #include <stdio.h>
 
 void fun (int i,int j){
-    if(i==j) {
-    printf("%d",i);
-    return;
-    }
-    printf("%d ",i); 
+    if(i>j) return;
+    printf("%d ",i);
     fun(i+1, j);
 //    for (int i = 1; i <= n; i++)
 //    {
