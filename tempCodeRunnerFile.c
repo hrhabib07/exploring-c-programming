@@ -1,1 +1,1 @@
-n
+sumCalc(arr,n,i+1)
